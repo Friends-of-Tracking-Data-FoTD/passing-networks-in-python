@@ -33,6 +33,8 @@ For tracking data, only _basic_ and _tracking_ plot types are allowed. _basic_ w
 * -b (--ball-location). If present, it filters the location of the player to those frames when the ball was in the team's half (_own_half_) or in the opponent's half of the pitch (_opponent_half_).
 * -c (--context). If present, it filters the location of the player to those frames when the selected team was either _attacking_ or _defending_.
 
+In addition, the colors and sizes of the elements in networks can be configured by changing the values in the _visualization/plot_config.json_ file.
+
 ### Examples of command
 
 StatsBomb: `python3 run.py -m 7576 -t Portugal -s eventing -k pass_value`
