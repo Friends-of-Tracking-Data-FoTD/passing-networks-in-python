@@ -1,0 +1,18 @@
+{
+  "background_color": "white",
+  "lines_color": "#bcbcbc",
+  "edges_cmap": "Oranges",
+  "nodes_cmap": "Reds",
+  "font_color": "black",
+
+  "plot_edges": true,
+  "fig_size": 12,
+  "font_size": 9,
+  "width": 105,
+  "height": 68,
+
+  "max_node_size": 100,
+  "min_node_size": 25,
+  "max_edge_width": 5,
+  "min_edge_width": 1
+}
