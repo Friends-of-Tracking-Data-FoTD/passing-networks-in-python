@@ -35,7 +35,7 @@ For tracking data, only _basic_ and _tracking_ plot types are allowed. _basic_ w
 
 In addition, the colors and sizes of the elements in networks can be configured by changing the values in the _visualization/plot_config.json_ file.
 
-### Examples of command
+### Examples of bash commands
 
 StatsBomb: `python3 run.py -m 7576 -t Portugal -s eventing -k pass_value`
 
