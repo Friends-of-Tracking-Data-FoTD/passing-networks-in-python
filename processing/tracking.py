@@ -35,7 +35,7 @@ class MetricaPassingNetwork(PassingNetworkBuilder, ABC):
         self.player_pass_count = None
 
     def read_data(self):
-        data_path = "data/tracking/"
+        data_path = "data/tracking"
 
         # Read both tracking and eventing data
         df_events = read_event_data(data_path, self.match_id)
@@ -171,7 +171,7 @@ class MetricaTrackingPassingNetwork(MetricaPassingNetwork):
 
         if self.half:
             match_start = self.df_events[self.df_events["Subtype"] == "KICK OFF"].iloc[0]["Start Frame"]
-            mean_x = df_tracking.loc[df_tracking.index == match_start, x_columns].mean().mean()
+            mean_x = self.df_tracking.loc[self.df_tracking.index == match_start, x_columns].mean().mean()
 
             if self.half == "own_half":
                 if mean_x < 0.5:

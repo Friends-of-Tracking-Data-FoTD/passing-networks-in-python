@@ -73,7 +73,7 @@ class StatsBombPassingNetwork(PassingNetworkBuilder, ABC):
 
     @staticmethod
     def _statsbomb_to_point(location, max_width=120, max_height=80):
-        return location[0] / max_width, location[1] / max_height
+        return location[0] / max_width, 1-(location[1] / max_height)
 
 
 class StatsBombBasicPassingNetwork(StatsBombPassingNetwork):
