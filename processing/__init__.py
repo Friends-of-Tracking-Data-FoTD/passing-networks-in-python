@@ -15,16 +15,15 @@ from visualization.passing_network import draw_pitch, draw_pass_map
 
 class PassingNetworkBuilder(ABC):
     """
-    This abstract class defines a template method that contains a skeleton of
+    Abstract class that defines a template method containing a skeleton of
     the code for building a passing network plot.
 
     Concrete subclasses should implement these operations for specific data
     sources (e.g. eventing vs tracking).
     """
-
     def build_and_save(self):
         """
-        This method defines the template of the algorithm.
+        Template of the algorithm.
         """
         self.read_data()
         self.compute_total_minutes()
@@ -51,6 +50,9 @@ class PassingNetworkBuilder(ABC):
         pass
 
     def build_plot(self):
+        """
+        Plot the pitch and passing network, saving the output image into the 'plots' folder.
+        """
         ax = draw_pitch()
         draw_pass_map(ax, self.player_position, self.player_pass_count, self.player_pass_value,
                       self.pair_pass_count, self.pair_pass_value, self.plot_title, self.plot_legend)

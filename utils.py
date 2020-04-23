@@ -16,6 +16,9 @@ import sys
 
 
 def parse_args():
+    '''
+    Parse command line arguments for plot customization
+    '''
     parser = argparse.ArgumentParser()
     parser.add_argument('-m', '--match-id', dest='match_id', help='Match ID', required=True)
     parser.add_argument('-t', '--team-name', dest='team_name', help='Selected team in match', required=True)
@@ -39,10 +42,16 @@ def parse_args():
 
 
 def read_json(path):
+    '''
+    Read JSON file from path
+    '''
     return json.loads(read(path))
 
 
 def read(path):
+    '''
+    Read content of a file
+    '''
     with open(path, 'r') as f:
         return f.read()
 

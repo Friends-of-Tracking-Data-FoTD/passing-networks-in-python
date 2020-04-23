@@ -13,6 +13,10 @@ from utils import parse_args
 
 
 def main(args):
+    '''
+    Instantiates a Passing Network Builder depending on the type of plot selected with the arguments
+    in the command line.
+    '''
     if args.source == "eventing":
         if args.plot_type == "pass_value":
             plot_builder = StatsBombValuePassingNetwork(args)
