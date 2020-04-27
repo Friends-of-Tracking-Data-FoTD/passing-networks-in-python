@@ -10,6 +10,9 @@ The sample data can be found in the following repositories:
 
 Also, further information about the VAEP metric can be found in this repository: https://github.com/ML-KULeuven/socceraction
 
+Video tutorial: https://www.youtube.com/watch?v=JZ6Jc-cvKX8
+
+
 ### How to run this piece of software?
 
 Please, follow these steps to be able to run the code:
