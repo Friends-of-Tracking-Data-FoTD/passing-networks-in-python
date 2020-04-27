@@ -128,7 +128,7 @@ class StatsBombValuePassingNetwork(StatsBombPassingNetwork):
     def __init__(self, args):
         super(StatsBombValuePassingNetwork, self).__init__(args)
 
-        # This data must be prepared on advance by running the 'predict_vaep.py' script
+        # This data must be prepared on advance by running the 'prepare_vaep.py' script
         self.predictions_h5 = os.path.join("data/eventing", "predictions.h5")
 
         spadl_h5 = os.path.join("data/eventing", "spadl-statsbomb.h5")
